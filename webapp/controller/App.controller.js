@@ -93,7 +93,9 @@ sap.ui.define([
             // EntitySet=tabla → Es un array que contiene los registros=entidades=obj.json=items=rows_tabla
             var aEntitySetObjJSON = aEntitySetItemsSAPUI5.map(ItemSAPUI5 => ItemSAPUI5.getBindingContext().getObject());
             console.log(aEntitySetObjJSON);
+            console.log('this.getView().byId("tableEmployee").getItems()');
             console.log(oTable.getItems());
+            console.log("this.getView().byId('tableEmployee').getItems().map(ItemSAPUI5 => ItemSAPUI5.getBindingContext())");
             console.log( aEntitySetItemsSAPUI5.map(ItemSAPUI5 => ItemSAPUI5.getBindingContext()) );
             
             
